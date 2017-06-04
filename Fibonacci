@@ -1,0 +1,28 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Main {
+
+	public static void main(String[] args) throws  IOException {
+		// TODO Auto-generated method stub
+       int a = 0,b = 1,n,num;
+       String str;
+       //接收键盘输入
+       BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
+       System.out.print("输入一个数");
+       num  = Integer.parseInt(buf.readLine());
+       while(b<num){
+    	   n = a + b;
+    	   a = b;
+    	   b = n;
+       }
+       if( num == b){
+    	   System.out.println("Yes");
+       }else{
+    	   System.out.println("No");
+       }
+    	   
+	}
+
+}
