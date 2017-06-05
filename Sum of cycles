@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args)  {
+		 int n ,i = 1,sum = 0;
+		 Scanner buf = new Scanner(System.in);
+	    // BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
+		 do{
+			 System.out.print("输入一个数");
+			 n = buf.nextInt();
+			 //i  = Integer.parseInt(buf.readLine());
+		 }while(n<=0);
+		 while(i<=n)
+			 sum += i++;
+			 System.out.println(sum);
+	} 
+}
